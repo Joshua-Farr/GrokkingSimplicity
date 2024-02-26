@@ -26,13 +26,13 @@ function getCurrentDiscountSeason() {
   return "cold";
 }
 
-function isItemEligibleForDiscount(discountSeason) {
-  return discountSeason === getCurrentDiscountSeason() ? true : false;
-}
-
 function getItemDiscountSeason(item) {
   let discountSeason = item.seasonType;
   return discountSeason;
+}
+
+function isItemEligibleForDiscount(discountSeason) {
+  return discountSeason === getCurrentDiscountSeason() ? true : false;
 }
 
 function calculateItemPriceAfterDiscount(item) {
